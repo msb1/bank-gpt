@@ -1,0 +1,6 @@
+{
+  "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+  "tenant_id": 1,
+  "binding_version": 4,
+  "input_source": "BANKGPT_INPUT_MEMBER_ID environment variable"
+}

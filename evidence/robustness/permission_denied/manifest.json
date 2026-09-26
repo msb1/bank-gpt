@@ -1,0 +1,10 @@
+{
+  "name": "permission_denied",
+  "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+  "scenario": null,
+  "expected_status": "failure",
+  "expected_code": "permission_denied",
+  "run_id": "97be0718-2b08-45fa-9950-27f0118e2d9a",
+  "assertion": "passed",
+  "browser": "remote-playwright"
+}

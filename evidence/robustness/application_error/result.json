@@ -1,0 +1,13 @@
+{
+  "run_id": "496c488e-e084-4c94-af28-ad59d180bfac",
+  "result": {
+    "status": "failure",
+    "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+    "outputs": {},
+    "code": "application_error",
+    "step_id": "step_3",
+    "expected": "No application failure",
+    "observed": "Application error",
+    "intervention_id": null
+  }
+}

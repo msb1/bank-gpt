@@ -1,0 +1,13 @@
+{
+  "run_id": "2c518e7a-4618-49e6-9b31-3cad2556fc61",
+  "result": {
+    "status": "intervention_required",
+    "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+    "outputs": {},
+    "code": "target_unavailable",
+    "step_id": "step_2",
+    "expected": null,
+    "observed": "replay stopped: DriverError: target not found or ambiguous: Search",
+    "intervention_id": "a638a22a-a343-46be-8981-70846069d293"
+  }
+}

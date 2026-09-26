@@ -1,0 +1,13 @@
+{
+  "name": "application_error",
+  "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+  "scenario": {
+    "fault": "app_error",
+    "step_id": "step_2"
+  },
+  "expected_status": "failure",
+  "expected_code": "application_error",
+  "run_id": "496c488e-e084-4c94-af28-ad59d180bfac",
+  "assertion": "passed",
+  "browser": "remote-playwright"
+}

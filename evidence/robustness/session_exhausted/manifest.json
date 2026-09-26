@@ -1,0 +1,14 @@
+{
+  "name": "session_exhausted",
+  "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+  "scenario": {
+    "fault": "session_expired",
+    "step_id": "step_2",
+    "occurrences": 2
+  },
+  "expected_status": "intervention_required",
+  "expected_code": "recovery_exhausted",
+  "run_id": "2f228c79-81ce-4d8f-a344-2692870eeb33",
+  "assertion": "passed",
+  "browser": "remote-playwright"
+}

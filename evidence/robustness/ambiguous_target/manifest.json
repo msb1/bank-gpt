@@ -1,0 +1,13 @@
+{
+  "name": "ambiguous_target",
+  "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+  "scenario": {
+    "fault": "ambiguous_target",
+    "step_id": "step_1"
+  },
+  "expected_status": "intervention_required",
+  "expected_code": "target_unavailable",
+  "run_id": "2c518e7a-4618-49e6-9b31-3cad2556fc61",
+  "assertion": "passed",
+  "browser": "remote-playwright"
+}

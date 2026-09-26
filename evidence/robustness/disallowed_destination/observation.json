@@ -1,0 +1,74 @@
+{
+  "reason": "URL is outside the configured allowlist",
+  "code": "policy_blocked",
+  "step_id": "step_2",
+  "owner": "human",
+  "browser_session_id": "1031c791-5d60-4b09-9c68-6fe344c6b59e",
+  "observation": {
+    "url": "http://192.168.z.zz:8000/demo",
+    "title": "Member Service Console",
+    "ui_version": "north-v1",
+    "controls": [
+      {
+        "index": 0,
+        "tag": "h1",
+        "text": "Member Service Console",
+        "label": "",
+        "destination": null,
+        "row_label": null,
+        "id": null,
+        "name": null,
+        "type": null,
+        "role": null
+      },
+      {
+        "index": 1,
+        "tag": "td",
+        "text": "Member lookup",
+        "label": "",
+        "destination": null,
+        "row_label": null,
+        "id": null,
+        "name": null,
+        "type": null,
+        "role": null
+      },
+      {
+        "index": 2,
+        "tag": "td",
+        "text": "[value]",
+        "label": "",
+        "destination": null,
+        "row_label": "Member lookup",
+        "id": null,
+        "name": null,
+        "type": null,
+        "role": null
+      },
+      {
+        "index": 3,
+        "tag": "input",
+        "text": "",
+        "label": "Member ID",
+        "destination": "http://192.168.z.zz:8000/demo",
+        "row_label": null,
+        "id": "member",
+        "name": "member_id",
+        "type": null,
+        "role": null
+      },
+      {
+        "index": 4,
+        "tag": "button",
+        "text": "Search",
+        "label": "",
+        "destination": "https://example.org/outside",
+        "row_label": null,
+        "id": null,
+        "name": null,
+        "type": "submit",
+        "role": null
+      }
+    ]
+  }
+}

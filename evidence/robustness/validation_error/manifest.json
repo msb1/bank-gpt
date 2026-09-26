@@ -1,0 +1,13 @@
+{
+  "name": "validation_error",
+  "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+  "scenario": {
+    "fault": "validation_error",
+    "step_id": "step_2"
+  },
+  "expected_status": "business_outcome",
+  "expected_code": "validation_error",
+  "run_id": "4831cdf7-4b44-478b-9118-0bd4085285bf",
+  "assertion": "passed",
+  "browser": "remote-playwright"
+}

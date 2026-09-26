@@ -1,0 +1,50 @@
+{
+  "reason": "session_expired",
+  "code": "recovery_exhausted",
+  "step_id": "step_3",
+  "owner": "human",
+  "browser_session_id": "41e960f2-7c94-4022-ac1a-2d6afbe8684a",
+  "observation": {
+    "url": "http://192.168.z.zz:8000/demo/result",
+    "title": "Member Service Console",
+    "ui_version": "north-v1",
+    "controls": [
+      {
+        "index": 0,
+        "tag": "h1",
+        "text": "Member Service Console",
+        "label": "",
+        "destination": null,
+        "row_label": null,
+        "id": null,
+        "name": null,
+        "type": null,
+        "role": null
+      },
+      {
+        "index": 1,
+        "tag": "p",
+        "text": "Session expired",
+        "label": "",
+        "destination": null,
+        "row_label": null,
+        "id": null,
+        "name": null,
+        "type": null,
+        "role": null
+      },
+      {
+        "index": 2,
+        "tag": "a",
+        "text": "Start again",
+        "label": "",
+        "destination": "http://192.168.z.zz:8000/demo",
+        "row_label": null,
+        "id": null,
+        "name": null,
+        "type": null,
+        "role": null
+      }
+    ]
+  }
+}

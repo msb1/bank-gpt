@@ -1,0 +1,14 @@
+{
+  "name": "slow_within_limit",
+  "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+  "scenario": {
+    "fault": "slow_load",
+    "step_id": "step_2",
+    "delay_seconds": 2
+  },
+  "expected_status": "success",
+  "expected_code": null,
+  "run_id": "2a945026-046f-45c2-a460-17745467774c",
+  "assertion": "passed",
+  "browser": "remote-playwright"
+}

@@ -1,0 +1,13 @@
+{
+  "run_id": "2f228c79-81ce-4d8f-a344-2692870eeb33",
+  "result": {
+    "status": "intervention_required",
+    "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+    "outputs": {},
+    "code": "recovery_exhausted",
+    "step_id": "step_3",
+    "expected": null,
+    "observed": "session_expired",
+    "intervention_id": "8688a25c-48d6-4dbf-aa37-73b688270185"
+  }
+}

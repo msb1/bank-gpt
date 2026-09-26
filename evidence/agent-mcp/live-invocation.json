@@ -1,0 +1,54 @@
+{
+  "transport": "FastMCP stdio",
+  "tools": [
+    "capability_catalog",
+    "invoke_capability",
+    "run_status"
+  ],
+  "cross_tenant_catalog_denied": true,
+  "catalog_tenant_id": 1,
+  "catalog_names": [
+    "read_savings_balance@0fdf8e13-e573-4efc-984f-9745542b0bfb",
+    "read_savings_balance@31380f6b-572e-49c9-9ac9-00bbc339de8c",
+    "read_savings_balance@d847b7f4-6460-433f-b53c-4f4640c2d352"
+  ],
+  "selection": {
+    "invoke_name": "read_savings_balance@d847b7f4-6460-433f-b53c-4f4640c2d352",
+    "reason": "approved savings balance capability with typed member_id input",
+    "inputs": [
+      {
+        "name": "member_id",
+        "type": "string",
+        "description": "Member identifier",
+        "required": true
+      }
+    ],
+    "outputs": [
+      {
+        "name": "balance",
+        "type": "string",
+        "description": "Displayed savings balance",
+        "required": true
+      }
+    ]
+  },
+  "invocation": {
+    "name": "read_savings_balance@d847b7f4-6460-433f-b53c-4f4640c2d352",
+    "arguments": {
+      "member_id": "[input]"
+    },
+    "run_id": "33211ec5-5a31-4e30-9375-547733ac4581",
+    "status": "success",
+    "output_names": [
+      "balance"
+    ],
+    "output_values": {
+      "balance": "[amount]"
+    }
+  },
+  "status": {
+    "run_id": "33211ec5-5a31-4e30-9375-547733ac4581",
+    "owner": "automation",
+    "checkpoint_verified": true
+  }
+}

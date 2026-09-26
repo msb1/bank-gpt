@@ -1,0 +1,13 @@
+{
+  "run_id": "a138ca93-7fb9-49e1-aef3-eb7878770231",
+  "result": {
+    "status": "intervention_required",
+    "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+    "outputs": {},
+    "code": "policy_blocked",
+    "step_id": "step_2",
+    "expected": null,
+    "observed": "URL is outside the configured allowlist",
+    "intervention_id": "dd1cd798-5eda-4568-afb8-32776c2c448f"
+  }
+}

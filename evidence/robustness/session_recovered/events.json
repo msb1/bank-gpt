@@ -1,0 +1,117 @@
+[
+  {
+    "at": "2026-09-26T02:55:05.040064Z",
+    "kind": "replay_started",
+    "detail": {
+      "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+      "input_names": [
+        "member_id"
+      ]
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:05.040077Z",
+    "kind": "scenario_attached",
+    "detail": {
+      "fault": "session_expired",
+      "step_id": "step_2",
+      "occurrences": 1,
+      "delay_seconds": 0
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:05.151349Z",
+    "kind": "step_completed",
+    "detail": {
+      "step_id": "step_1",
+      "action": "type",
+      "locator": {
+        "strategy": "name",
+        "value": "member_id",
+        "tag": null
+      },
+      "output_name": null
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:05.294614Z",
+    "kind": "step_completed",
+    "detail": {
+      "step_id": "step_2",
+      "action": "click",
+      "locator": {
+        "strategy": "text",
+        "value": "Search",
+        "tag": "button"
+      },
+      "output_name": null
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:05.346199Z",
+    "kind": "recovery",
+    "detail": {
+      "code": "session_expired",
+      "attempt": 1
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:05.462984Z",
+    "kind": "step_completed",
+    "detail": {
+      "step_id": "step_1",
+      "action": "type",
+      "locator": {
+        "strategy": "name",
+        "value": "member_id",
+        "tag": null
+      },
+      "output_name": null
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:05.610119Z",
+    "kind": "step_completed",
+    "detail": {
+      "step_id": "step_2",
+      "action": "click",
+      "locator": {
+        "strategy": "text",
+        "value": "Search",
+        "tag": "button"
+      },
+      "output_name": null
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:05.704726Z",
+    "kind": "step_completed",
+    "detail": {
+      "step_id": "step_3",
+      "action": "extract",
+      "locator": {
+        "strategy": "xpath",
+        "value": "//tr[td[1][normalize-space(.)='Savings balance']]/td[2]",
+        "tag": null
+      },
+      "output_name": "balance"
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:05.712834Z",
+    "kind": "checkpoint_verified",
+    "detail": {
+      "target": "Savings balance"
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:05.712842Z",
+    "kind": "replay_success",
+    "detail": {
+      "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+      "output_names": [
+        "balance"
+      ]
+    }
+  }
+]

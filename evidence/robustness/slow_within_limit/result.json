@@ -1,0 +1,15 @@
+{
+  "run_id": "2a945026-046f-45c2-a460-17745467774c",
+  "result": {
+    "status": "success",
+    "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+    "outputs": {
+      "balance": "[amount]"
+    },
+    "code": null,
+    "step_id": null,
+    "expected": null,
+    "observed": null,
+    "intervention_id": null
+  }
+}

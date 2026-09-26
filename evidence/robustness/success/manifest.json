@@ -1,0 +1,10 @@
+{
+  "name": "success",
+  "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+  "scenario": null,
+  "expected_status": "success",
+  "expected_code": null,
+  "run_id": "60a022b8-cdaa-4865-b50b-fa5a5d0d3135",
+  "assertion": "passed",
+  "browser": "remote-playwright"
+}

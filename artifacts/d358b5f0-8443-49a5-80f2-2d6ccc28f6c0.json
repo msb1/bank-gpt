@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.1",
+  "id": "d358b5f0-8443-49a5-80f2-2d6ccc28f6c0",
+  "name": "read_savings_balance",
+  "description": "Look up a member and read the current savings balance",
+  "tenant_id": 1,
+  "created_by": 1,
+  "vendor_product": "local-bank-demo",
+  "surface": "playwright",
+  "allowed_origin": "http://192.168.z.zz:8000",
+  "entry_url": "http://192.168.z.zz:8000/demo",
+  "inputs": [
+    {
+      "name": "member_id",
+      "type": "string",
+      "description": "Member identifier",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "balance",
+      "type": "string",
+      "description": "Displayed savings balance",
+      "required": true
+    }
+  ],
+  "steps": [
+    {
+      "id": "step_1",
+      "action": "type",
+      "target": {
+        "description": "Member ID",
+        "candidates": [
+          {
+            "strategy": "name",
+            "value": "member_id",
+            "tag": null
+          },
+          {
+            "strategy": "label",
+            "value": "Member ID",
+            "tag": null
+          },
+          {
+            "strategy": "id",
+            "value": "member",
+            "tag": null
+          }
+        ]
+      },
+      "value": {
+        "parameter": "member_id"
+      },
+      "output": null,
+      "expected": null,
+      "risk": "safe"
+    },
+    {
+      "id": "step_2",
+      "action": "click",
+      "target": {
+        "description": "Search",
+        "candidates": [
+          {
+            "strategy": "text",
+            "value": "Search",
+            "tag": "button"
+          }
+        ]
+      },
+      "value": null,
+      "output": null,
+      "expected": null,
+      "risk": "safe"
+    },
+    {
+      "id": "step_3",
+      "action": "extract",
+      "target": {
+        "description": "Savings balance",
+        "candidates": [
+          {
+            "strategy": "xpath",
+            "value": "//tr[td[1][normalize-space(.)='Savings balance']]/td[2]",
+            "tag": null
+          }
+        ]
+      },
+      "value": null,
+      "output": "balance",
+      "expected": null,
+      "risk": "safe"
+    }
+  ],
+  "checkpoint": {
+    "description": "Savings balance",
+    "candidates": [
+      {
+        "strategy": "text",
+        "value": "Savings balance",
+        "tag": "td"
+      }
+    ]
+  },
+  "business_outcomes": [
+    {
+      "code": "member_not_found",
+      "target": {
+        "description": "Member not found",
+        "candidates": [
+          {
+            "strategy": "text",
+            "value": "Member not found",
+            "tag": "p"
+          }
+        ]
+      },
+      "description": "Member not found"
+    }
+  ],
+  "recoverable": [
+    {
+      "code": "session_expired",
+      "target": {
+        "description": "Session expired",
+        "candidates": [
+          {
+            "strategy": "text",
+            "value": "Session expired",
+            "tag": "p"
+          }
+        ]
+      },
+      "description": "Session expired"
+    }
+  ],
+  "hard_failures": [
+    {
+      "code": "permission_denied",
+      "target": {
+        "description": "Permission denied",
+        "candidates": [
+          {
+            "strategy": "text",
+            "value": "Permission denied",
+            "tag": "p"
+          }
+        ]
+      },
+      "description": "Permission denied"
+    }
+  ],
+  "created_at": "2026-09-25T17:06:14.401804Z"
+}

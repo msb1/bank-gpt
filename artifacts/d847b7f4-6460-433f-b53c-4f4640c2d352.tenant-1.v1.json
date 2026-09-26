@@ -1,0 +1,126 @@
+{
+  "schema_version": "2.0",
+  "base_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+  "tenant_id": 1,
+  "version": 1,
+  "entry_url": "http://192.168.z.zz:8000/demo",
+  "allowed_origin": "http://192.168.z.zz:8000",
+  "ui_fingerprint": "Member Service Console",
+  "ui_version": "north-v1",
+  "targets": {
+    "member_input": {
+      "description": "Member ID",
+      "candidates": [
+        {
+          "strategy": "name",
+          "value": "member_id",
+          "tag": null
+        },
+        {
+          "strategy": "label",
+          "value": "Member ID",
+          "tag": null
+        },
+        {
+          "strategy": "id",
+          "value": "member",
+          "tag": null
+        }
+      ]
+    },
+    "search_button": {
+      "description": "Search",
+      "candidates": [
+        {
+          "strategy": "text",
+          "value": "Search",
+          "tag": "button"
+        }
+      ]
+    },
+    "balance_cell": {
+      "description": "Savings balance",
+      "candidates": [
+        {
+          "strategy": "xpath",
+          "value": "//tr[td[1][normalize-space(.)='Savings balance']]/td[2]",
+          "tag": null
+        }
+      ]
+    },
+    "success_marker": {
+      "description": "Savings balance",
+      "candidates": [
+        {
+          "strategy": "text",
+          "value": "Savings balance",
+          "tag": "td"
+        }
+      ]
+    },
+    "member_not_found": {
+      "description": "Member not found",
+      "candidates": [
+        {
+          "strategy": "text",
+          "value": "Member not found",
+          "tag": "p"
+        }
+      ]
+    },
+    "validation_error": {
+      "description": "Invalid member ID",
+      "candidates": [
+        {
+          "strategy": "text",
+          "value": "Invalid member ID",
+          "tag": "p"
+        }
+      ]
+    },
+    "session_expired": {
+      "description": "Session expired",
+      "candidates": [
+        {
+          "strategy": "text",
+          "value": "Session expired",
+          "tag": "p"
+        }
+      ]
+    },
+    "verification_required": {
+      "description": "Verification required",
+      "candidates": [
+        {
+          "strategy": "text",
+          "value": "Verification required",
+          "tag": "p"
+        }
+      ]
+    },
+    "permission_denied": {
+      "description": "Permission denied",
+      "candidates": [
+        {
+          "strategy": "text",
+          "value": "Permission denied",
+          "tag": "p"
+        }
+      ]
+    },
+    "application_error": {
+      "description": "Application error",
+      "candidates": [
+        {
+          "strategy": "text",
+          "value": "Application error",
+          "tag": "p"
+        }
+      ]
+    }
+  },
+  "reviewed_overrides": {},
+  "approval_state": "approved",
+  "reviewed_by": 5,
+  "reviewed_at": "2026-09-26T02:18:29.911000Z"
+}

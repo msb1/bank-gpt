@@ -1,0 +1,68 @@
+{
+  "model": "qwen2.5-7b-instruct-mlx",
+  "cases": [
+    {
+      "case": "corrected_locator",
+      "scenario": {
+        "fault": "locator_drift"
+      },
+      "run_id": "9764541b-a7c8-498c-ae6e-fd73853de927",
+      "status": "success",
+      "code": null,
+      "events": [
+        {
+          "kind": "fallback_proposed",
+          "step_id": "step_1",
+          "outcome": "candidate",
+          "reason": null
+        },
+        {
+          "kind": "checkpoint_verified",
+          "step_id": null,
+          "outcome": null,
+          "reason": null
+        },
+        {
+          "kind": "fallback_accepted",
+          "step_id": null,
+          "outcome": null,
+          "reason": "final checkpoint verified; artifact unchanged"
+        }
+      ]
+    },
+    {
+      "case": "missing_target",
+      "scenario": {
+        "fault": "missing_target"
+      },
+      "run_id": "c34ee681-bef2-4888-a9ac-37531cf377f7",
+      "status": "intervention_required",
+      "code": "target_unavailable",
+      "events": [
+        {
+          "kind": "fallback_rejected",
+          "step_id": "step_1",
+          "outcome": null,
+          "reason": "model declined correction"
+        }
+      ]
+    },
+    {
+      "case": "risky_control",
+      "scenario": {
+        "fault": "risky_control"
+      },
+      "run_id": "5b03eb46-1dbf-4064-8983-d47be1692e78",
+      "status": "intervention_required",
+      "code": "policy_blocked",
+      "events": [
+        {
+          "kind": "policy_blocked",
+          "step_id": "step_2",
+          "outcome": null,
+          "reason": "risky action requires human intervention"
+        }
+      ]
+    }
+  ]
+}

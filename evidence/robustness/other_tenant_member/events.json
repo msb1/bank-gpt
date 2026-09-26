@@ -1,0 +1,48 @@
+[
+  {
+    "at": "2026-09-26T02:55:02.934080Z",
+    "kind": "replay_started",
+    "detail": {
+      "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+      "input_names": [
+        "member_id"
+      ]
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:03.031847Z",
+    "kind": "step_completed",
+    "detail": {
+      "step_id": "step_1",
+      "action": "type",
+      "locator": {
+        "strategy": "name",
+        "value": "member_id",
+        "tag": null
+      },
+      "output_name": null
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:03.188079Z",
+    "kind": "step_completed",
+    "detail": {
+      "step_id": "step_2",
+      "action": "click",
+      "locator": {
+        "strategy": "text",
+        "value": "Search",
+        "tag": "button"
+      },
+      "output_name": null
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:03.224925Z",
+    "kind": "business_outcome",
+    "detail": {
+      "code": "member_not_found",
+      "step_id": "step_3"
+    }
+  }
+]

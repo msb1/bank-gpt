@@ -1,0 +1,58 @@
+[
+  {
+    "at": "2026-09-26T02:55:04.322528Z",
+    "kind": "replay_started",
+    "detail": {
+      "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+      "input_names": [
+        "member_id"
+      ]
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:04.322543Z",
+    "kind": "scenario_attached",
+    "detail": {
+      "fault": "validation_error",
+      "step_id": "step_2",
+      "occurrences": 1,
+      "delay_seconds": 0
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:04.422944Z",
+    "kind": "step_completed",
+    "detail": {
+      "step_id": "step_1",
+      "action": "type",
+      "locator": {
+        "strategy": "name",
+        "value": "member_id",
+        "tag": null
+      },
+      "output_name": null
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:04.598331Z",
+    "kind": "step_completed",
+    "detail": {
+      "step_id": "step_2",
+      "action": "click",
+      "locator": {
+        "strategy": "text",
+        "value": "Search",
+        "tag": "button"
+      },
+      "output_name": null
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:04.636504Z",
+    "kind": "business_outcome",
+    "detail": {
+      "code": "validation_error",
+      "step_id": "step_3"
+    }
+  }
+]

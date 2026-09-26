@@ -1,0 +1,530 @@
+{
+  "scenario_id": "[number]-8c40-4801-a386-72198f683b1e",
+  "operator_url": "http://192.168.z.zz:8000/runs/[number]-8c40-4801-a386-72198f683b1e/operator",
+  "browser_session_id": "c54eed4a-21fa-4b28-98c1-2b21cdcc06ee",
+  "denials": [
+    {
+      "actor": "north_reader",
+      "action": "operator/action",
+      "status": 403
+    },
+    {
+      "actor": "north_reader",
+      "action": "resume",
+      "status": 403
+    },
+    {
+      "actor": "cedar_operator",
+      "action": "operator/action",
+      "status": 403
+    },
+    {
+      "actor": "cedar_operator",
+      "action": "resume",
+      "status": 403
+    }
+  ],
+  "premature_completion_status": 422,
+  "paused": {
+    "run_id": "[number]-8c40-4801-a386-72198f683b1e",
+    "mode": "replay",
+    "owner": "human",
+    "binding_version": 4,
+    "result": {
+      "status": "intervention_required",
+      "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+      "outputs": {},
+      "code": "verification_required",
+      "step_id": "step_3",
+      "expected": null,
+      "observed": "Verification required",
+      "intervention_id": "49c18b87-a469-43cb-843f-4afc30b7032a"
+    },
+    "browser_session_id": "c54eed4a-21fa-4b28-98c1-2b21cdcc06ee",
+    "next_step": 2,
+    "current_step": "step_3",
+    "intervention": {
+      "id": "49c18b87-a469-43cb-843f-4afc30b7032a",
+      "reason": "Verification required",
+      "browser_session_id": "c54eed4a-21fa-4b28-98c1-2b21cdcc06ee",
+      "step_id": "step_3",
+      "owner": "human",
+      "state": "open",
+      "observation": {
+        "url": "http://192.168.z.zz:8000/demo/result",
+        "title": "Member Service Console",
+        "ui_version": "north-v1",
+        "controls": [
+          {
+            "index": 0,
+            "tag": "h1",
+            "text": "Member Service Console",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 1,
+            "tag": "p",
+            "text": "Verification required",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 2,
+            "tag": "button",
+            "text": "Verify lookup",
+            "label": "",
+            "destination": "http://192.168.z.zz:8000/demo/result",
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": "submit",
+            "role": null
+          }
+        ]
+      },
+      "completed_step_action": false
+    },
+    "events": [
+      {
+        "at": "2026-09-26T02:55:34.660254Z",
+        "kind": "replay_started",
+        "detail": {
+          "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+          "input_names": [
+            "member_id"
+          ]
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:34.660268Z",
+        "kind": "scenario_attached",
+        "detail": {
+          "fault": "verification_required",
+          "step_id": "step_3",
+          "occurrences": 1,
+          "delay_seconds": 0
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:34.760053Z",
+        "kind": "step_completed",
+        "detail": {
+          "step_id": "step_1",
+          "action": "type",
+          "locator": {
+            "strategy": "name",
+            "value": "member_id",
+            "tag": null
+          },
+          "output_name": null
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:34.911861Z",
+        "kind": "step_completed",
+        "detail": {
+          "step_id": "step_2",
+          "action": "click",
+          "locator": {
+            "strategy": "text",
+            "value": "Search",
+            "tag": "button"
+          },
+          "output_name": null
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:34.960122Z",
+        "kind": "intervention_requested",
+        "detail": {
+          "reason": "Verification required",
+          "code": "verification_required",
+          "step_id": "step_3",
+          "owner": "human",
+          "browser_session_id": "c54eed4a-21fa-4b28-98c1-2b21cdcc06ee",
+          "observation": {
+            "url": "http://192.168.z.zz:8000/demo/result",
+            "title": "Member Service Console",
+            "ui_version": "north-v1",
+            "controls": [
+              {
+                "index": 0,
+                "tag": "h1",
+                "text": "Member Service Console",
+                "label": "",
+                "destination": null,
+                "row_label": null,
+                "id": null,
+                "name": null,
+                "type": null,
+                "role": null
+              },
+              {
+                "index": 1,
+                "tag": "p",
+                "text": "Verification required",
+                "label": "",
+                "destination": null,
+                "row_label": null,
+                "id": null,
+                "name": null,
+                "type": null,
+                "role": null
+              },
+              {
+                "index": 2,
+                "tag": "button",
+                "text": "Verify lookup",
+                "label": "",
+                "destination": "http://192.168.z.zz:8000/demo/result",
+                "row_label": null,
+                "id": null,
+                "name": null,
+                "type": "submit",
+                "role": null
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "retry": {
+    "run_id": "[number]-8c40-4801-a386-72198f683b1e",
+    "result": {
+      "status": "intervention_required",
+      "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+      "outputs": {},
+      "code": "verification_required",
+      "step_id": "step_3",
+      "expected": null,
+      "observed": "Verification required",
+      "intervention_id": "0cd32425-ae1e-45af-bef8-fca447fdceee"
+    }
+  },
+  "resumed": {
+    "run_id": "[number]-8c40-4801-a386-72198f683b1e",
+    "result": {
+      "status": "success",
+      "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+      "outputs": {
+        "balance": "[amount]"
+      },
+      "code": null,
+      "step_id": null,
+      "expected": null,
+      "observed": null,
+      "intervention_id": null
+    }
+  },
+  "final": {
+    "run_id": "[number]-8c40-4801-a386-72198f683b1e",
+    "mode": "replay",
+    "owner": "automation",
+    "binding_version": 4,
+    "result": {
+      "status": "success",
+      "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+      "outputs": {
+        "balance": "[amount]"
+      },
+      "code": null,
+      "step_id": null,
+      "expected": null,
+      "observed": null,
+      "intervention_id": null
+    },
+    "browser_session_id": "c54eed4a-21fa-4b28-98c1-2b21cdcc06ee",
+    "next_step": 3,
+    "current_step": null,
+    "intervention": {
+      "id": "0cd32425-ae1e-45af-bef8-fca447fdceee",
+      "reason": "Verification required",
+      "browser_session_id": "c54eed4a-21fa-4b28-98c1-2b21cdcc06ee",
+      "step_id": "step_3",
+      "owner": "automation",
+      "state": "resolved",
+      "observation": {
+        "url": "http://192.168.z.zz:8000/demo/result",
+        "title": "Member Service Console",
+        "ui_version": "north-v1",
+        "controls": [
+          {
+            "index": 0,
+            "tag": "h1",
+            "text": "Member Service Console",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 1,
+            "tag": "p",
+            "text": "Verification required",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 2,
+            "tag": "button",
+            "text": "Verify lookup",
+            "label": "",
+            "destination": "http://192.168.z.zz:8000/demo/result",
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": "submit",
+            "role": null
+          }
+        ]
+      },
+      "completed_step_action": false
+    },
+    "events": [
+      {
+        "at": "2026-09-26T02:55:34.660254Z",
+        "kind": "replay_started",
+        "detail": {
+          "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+          "input_names": [
+            "member_id"
+          ]
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:34.660268Z",
+        "kind": "scenario_attached",
+        "detail": {
+          "fault": "verification_required",
+          "step_id": "step_3",
+          "occurrences": 1,
+          "delay_seconds": 0
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:34.760053Z",
+        "kind": "step_completed",
+        "detail": {
+          "step_id": "step_1",
+          "action": "type",
+          "locator": {
+            "strategy": "name",
+            "value": "member_id",
+            "tag": null
+          },
+          "output_name": null
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:34.911861Z",
+        "kind": "step_completed",
+        "detail": {
+          "step_id": "step_2",
+          "action": "click",
+          "locator": {
+            "strategy": "text",
+            "value": "Search",
+            "tag": "button"
+          },
+          "output_name": null
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:34.960122Z",
+        "kind": "intervention_requested",
+        "detail": {
+          "reason": "Verification required",
+          "code": "verification_required",
+          "step_id": "step_3",
+          "owner": "human",
+          "browser_session_id": "c54eed4a-21fa-4b28-98c1-2b21cdcc06ee",
+          "observation": {
+            "url": "http://192.168.z.zz:8000/demo/result",
+            "title": "Member Service Console",
+            "ui_version": "north-v1",
+            "controls": [
+              {
+                "index": 0,
+                "tag": "h1",
+                "text": "Member Service Console",
+                "label": "",
+                "destination": null,
+                "row_label": null,
+                "id": null,
+                "name": null,
+                "type": null,
+                "role": null
+              },
+              {
+                "index": 1,
+                "tag": "p",
+                "text": "Verification required",
+                "label": "",
+                "destination": null,
+                "row_label": null,
+                "id": null,
+                "name": null,
+                "type": null,
+                "role": null
+              },
+              {
+                "index": 2,
+                "tag": "button",
+                "text": "Verify lookup",
+                "label": "",
+                "destination": "http://192.168.z.zz:8000/demo/result",
+                "row_label": null,
+                "id": null,
+                "name": null,
+                "type": "submit",
+                "role": null
+              }
+            ]
+          }
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:35.021170Z",
+        "kind": "human_handoff_completed",
+        "detail": {
+          "operator_id": 5,
+          "completed_step": false,
+          "next_step": 2,
+          "browser_session_id": "c54eed4a-21fa-4b28-98c1-2b21cdcc06ee"
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:35.041418Z",
+        "kind": "intervention_requested",
+        "detail": {
+          "reason": "Verification required",
+          "code": "verification_required",
+          "step_id": "step_3",
+          "owner": "human",
+          "browser_session_id": "c54eed4a-21fa-4b28-98c1-2b21cdcc06ee",
+          "observation": {
+            "url": "http://192.168.z.zz:8000/demo/result",
+            "title": "Member Service Console",
+            "ui_version": "north-v1",
+            "controls": [
+              {
+                "index": 0,
+                "tag": "h1",
+                "text": "Member Service Console",
+                "label": "",
+                "destination": null,
+                "row_label": null,
+                "id": null,
+                "name": null,
+                "type": null,
+                "role": null
+              },
+              {
+                "index": 1,
+                "tag": "p",
+                "text": "Verification required",
+                "label": "",
+                "destination": null,
+                "row_label": null,
+                "id": null,
+                "name": null,
+                "type": null,
+                "role": null
+              },
+              {
+                "index": 2,
+                "tag": "button",
+                "text": "Verify lookup",
+                "label": "",
+                "destination": "http://192.168.z.zz:8000/demo/result",
+                "row_label": null,
+                "id": null,
+                "name": null,
+                "type": "submit",
+                "role": null
+              }
+            ]
+          }
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:35.691026Z",
+        "kind": "human_action",
+        "detail": {
+          "operator_id": 5,
+          "action": "click",
+          "target": "Verify lookup",
+          "locator": {
+            "strategy": "text",
+            "value": "Verify lookup",
+            "tag": "button"
+          },
+          "browser_session_id": "c54eed4a-21fa-4b28-98c1-2b21cdcc06ee"
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:35.744968Z",
+        "kind": "human_handoff_completed",
+        "detail": {
+          "operator_id": 5,
+          "completed_step": false,
+          "next_step": 2,
+          "browser_session_id": "c54eed4a-21fa-4b28-98c1-2b21cdcc06ee"
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:35.836499Z",
+        "kind": "step_completed",
+        "detail": {
+          "step_id": "step_3",
+          "action": "extract",
+          "locator": {
+            "strategy": "xpath",
+            "value": "//tr[td[1][normalize-space(.)='Savings balance']]/td[2]",
+            "tag": null
+          },
+          "output_name": "balance"
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:35.845019Z",
+        "kind": "checkpoint_verified",
+        "detail": {
+          "target": "Savings balance"
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:35.845029Z",
+        "kind": "replay_success",
+        "detail": {
+          "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+          "output_names": [
+            "balance"
+          ]
+        }
+      }
+    ]
+  },
+  "assertion": "passed",
+  "browser": "remote-playwright"
+}

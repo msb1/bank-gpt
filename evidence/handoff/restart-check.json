@@ -1,0 +1,7 @@
+{
+  "run_id": "5cec9f67-8c71-463d-9592-06c09b19c59d",
+  "status_after_restart": 404,
+  "detail": "run not found",
+  "assertion": "passed",
+  "limitation": "active runs are process-local"
+}

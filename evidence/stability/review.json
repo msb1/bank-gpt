@@ -1,0 +1,127 @@
+{
+  "N": 3,
+  "tenants": [
+    {
+      "tenant_id": 1,
+      "base_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+      "draft_binding_version": 2,
+      "approved_binding_version": 4,
+      "approval_state": "approved",
+      "reviewed_by": 5,
+      "reviewed_at": "2026-09-26T02:44:17.744448Z",
+      "individual_runs": [
+        {
+          "run_id": "d082f814-cea0-4077-b23b-e045a8a26abb",
+          "status": "success",
+          "output_names": [
+            "balance"
+          ]
+        },
+        {
+          "run_id": "7bcd48b1-e9d7-4e3b-95c5-0d4e083b899a",
+          "status": "success",
+          "output_names": [
+            "balance"
+          ]
+        },
+        {
+          "run_id": "ded27797-d7ff-454f-9e7f-1f6448b54358",
+          "status": "success",
+          "output_names": [
+            "balance"
+          ]
+        }
+      ],
+      "aggregate": {
+        "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+        "tenant_id": 1,
+        "binding_version": 2,
+        "runs": [
+          {
+            "run_id": "d082f814-cea0-4077-b23b-e045a8a26abb",
+            "status": "success",
+            "code": null
+          },
+          {
+            "run_id": "7bcd48b1-e9d7-4e3b-95c5-0d4e083b899a",
+            "status": "success",
+            "code": null
+          },
+          {
+            "run_id": "ded27797-d7ff-454f-9e7f-1f6448b54358",
+            "status": "success",
+            "code": null
+          }
+        ],
+        "counts": {
+          "success": 3,
+          "business_outcome": 0,
+          "intervention_required": 0,
+          "failure": 0
+        },
+        "rate": 1.0
+      }
+    },
+    {
+      "tenant_id": 2,
+      "base_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+      "draft_binding_version": 2,
+      "approved_binding_version": 4,
+      "approval_state": "approved",
+      "reviewed_by": 6,
+      "reviewed_at": "2026-09-26T02:44:19.885006Z",
+      "individual_runs": [
+        {
+          "run_id": "0480de58-d835-454d-aba4-9ad0e63dfe94",
+          "status": "success",
+          "output_names": [
+            "balance"
+          ]
+        },
+        {
+          "run_id": "d44b9106-920d-46c2-8c7c-2549e0883f89",
+          "status": "success",
+          "output_names": [
+            "balance"
+          ]
+        },
+        {
+          "run_id": "ae829f76-c59a-4539-ae9c-43f2c876ebdc",
+          "status": "success",
+          "output_names": [
+            "balance"
+          ]
+        }
+      ],
+      "aggregate": {
+        "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+        "tenant_id": 2,
+        "binding_version": 2,
+        "runs": [
+          {
+            "run_id": "0480de58-d835-454d-aba4-9ad0e63dfe94",
+            "status": "success",
+            "code": null
+          },
+          {
+            "run_id": "d44b9106-920d-46c2-8c7c-2549e0883f89",
+            "status": "success",
+            "code": null
+          },
+          {
+            "run_id": "ae829f76-c59a-4539-ae9c-43f2c876ebdc",
+            "status": "success",
+            "code": null
+          }
+        ],
+        "counts": {
+          "success": 3,
+          "business_outcome": 0,
+          "intervention_required": 0,
+          "failure": 0
+        },
+        "rate": 1.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": "2.0",
+  "base_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+  "tenant_id": 2,
+  "version": 3,
+  "entry_url": "http://192.168.z.zz:8000/demo/pine",
+  "allowed_origin": "http://192.168.z.zz:8000",
+  "ui_fingerprint": "Pine Valley Account Desk",
+  "ui_version": "pine-v2",
+  "targets": {
+    "member_input": {
+      "description": "Customer reference",
+      "candidates": [
+        {
+          "strategy": "name",
+          "value": "customer_ref",
+          "tag": null
+        },
+        {
+          "strategy": "id",
+          "value": "pine-reference",
+          "tag": null
+        }
+      ]
+    },
+    "search_button": {
+      "description": "Find account",
+      "candidates": [
+        {
+          "strategy": "text",
+          "value": "Find account",
+          "tag": "button"
+        }
+      ]
+    },
+    "balance_cell": {
+      "description": "Savings available",
+      "candidates": [
+        {
+          "strategy": "css",
+          "value": "strong[data-role='savings-balance']",
+          "tag": null
+        }
+      ]
+    },
+    "success_marker": {
+      "description": "Account overview",
+      "candidates": [
+        {
+          "strategy": "text",
+          "value": "Account overview",
+          "tag": "h2"
+        }
+      ]
+    },
+    "member_not_found": {
+      "description": "Member not found",
+      "candidates": [
+        {
+          "strategy": "text",
+          "value": "Member not found",
+          "tag": "p"
+        }
+      ]
+    },
+    "validation_error": {
+      "description": "Invalid member ID",
+      "candidates": [
+        {
+          "strategy": "text",
+          "value": "Invalid member ID",
+          "tag": "p"
+        }
+      ]
+    },
+    "session_expired": {
+      "description": "Session expired",
+      "candidates": [
+        {
+          "strategy": "text",
+          "value": "Session expired",
+          "tag": "p"
+        }
+      ]
+    },
+    "verification_required": {
+      "description": "Verification required",
+      "candidates": [
+        {
+          "strategy": "text",
+          "value": "Verification required",
+          "tag": "p"
+        }
+      ]
+    },
+    "permission_denied": {
+      "description": "Permission denied",
+      "candidates": [
+        {
+          "strategy": "text",
+          "value": "Permission denied",
+          "tag": "p"
+        }
+      ]
+    },
+    "application_error": {
+      "description": "Application error",
+      "candidates": [
+        {
+          "strategy": "text",
+          "value": "Application error",
+          "tag": "p"
+        }
+      ]
+    }
+  },
+  "reviewed_overrides": {},
+  "approval_state": "draft",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "stability": {
+    "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+    "tenant_id": 2,
+    "binding_version": 2,
+    "runs": [
+      {
+        "run_id": "0480de58-d835-454d-aba4-9ad0e63dfe94",
+        "status": "success",
+        "code": null
+      },
+      {
+        "run_id": "d44b9106-920d-46c2-8c7c-2549e0883f89",
+        "status": "success",
+        "code": null
+      },
+      {
+        "run_id": "ae829f76-c59a-4539-ae9c-43f2c876ebdc",
+        "status": "success",
+        "code": null
+      }
+    ],
+    "counts": {
+      "success": 3,
+      "business_outcome": 0,
+      "intervention_required": 0,
+      "failure": 0
+    },
+    "rate": 1.0
+  }
+}

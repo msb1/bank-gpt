@@ -1,0 +1,13 @@
+{
+  "run_id": "4831cdf7-4b44-478b-9118-0bd4085285bf",
+  "result": {
+    "status": "business_outcome",
+    "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+    "outputs": {},
+    "code": "validation_error",
+    "step_id": "step_3",
+    "expected": null,
+    "observed": null,
+    "intervention_id": null
+  }
+}

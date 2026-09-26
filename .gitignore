@@ -149,6 +149,8 @@ activemq-data/
 
 # Environments
 .env
+.env.*
+!.env.example
 .envrc
 .venv
 env/
@@ -205,6 +207,19 @@ tempCodeRunnerFile.py
 
 # Ruff stuff:
 .ruff_cache/
+
+# Bank GPT local state and unsanitized command responses
+data/
+discovery-response.json
+replay-response.json
+other-tenant-response.json
+*.sqlite3
+*.sqlite3-*
+.DS_Store
+
+# Local assignment prompt and completion checklist
+Assignment A — Computer-Use Automation System.*
+hit-list.md
 
 # PyPI configuration file
 .pypirc

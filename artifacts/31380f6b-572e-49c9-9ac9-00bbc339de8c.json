@@ -1,0 +1,96 @@
+{
+  "schema_version": "2.0",
+  "id": "31380f6b-572e-49c9-9ac9-00bbc339de8c",
+  "name": "read_savings_balance",
+  "description": "Look up a member and read the current savings balance",
+  "vendor_product": "local-bank-demo",
+  "vendor_version": "1",
+  "surface": "playwright",
+  "inputs": [
+    {
+      "name": "member_id",
+      "type": "string",
+      "description": "Member identifier",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "balance",
+      "type": "string",
+      "description": "Displayed savings balance",
+      "required": true
+    }
+  ],
+  "steps": [
+    {
+      "id": "step_1",
+      "action": "type",
+      "control": "member_input",
+      "value": {
+        "parameter": "member_id"
+      },
+      "output": null,
+      "risk": "safe"
+    },
+    {
+      "id": "step_2",
+      "action": "click",
+      "control": "search_button",
+      "value": null,
+      "output": null,
+      "risk": "safe"
+    },
+    {
+      "id": "step_3",
+      "action": "extract",
+      "control": "balance_cell",
+      "value": null,
+      "output": "balance",
+      "risk": "safe"
+    }
+  ],
+  "checkpoint": "success_marker",
+  "business_outcomes": [
+    {
+      "code": "member_not_found",
+      "control": "member_not_found",
+      "description": "Member not found"
+    },
+    {
+      "code": "validation_error",
+      "control": "validation_error",
+      "description": "Invalid member ID"
+    }
+  ],
+  "recoverable": [
+    {
+      "code": "session_expired",
+      "control": "session_expired",
+      "description": "Session expired"
+    },
+    {
+      "code": "verification_required",
+      "control": "verification_required",
+      "description": "Verification required"
+    }
+  ],
+  "hard_failures": [
+    {
+      "code": "permission_denied",
+      "control": "permission_denied",
+      "description": "Permission denied"
+    },
+    {
+      "code": "application_error",
+      "control": "application_error",
+      "description": "Application error"
+    }
+  ],
+  "allowed_actions": [
+    "click",
+    "type",
+    "extract"
+  ],
+  "created_at": "2026-09-26T02:56:44.298343Z"
+}

@@ -1,0 +1,13 @@
+{
+  "run_id": "860e841a-44bc-4424-8ca5-ff564e5629de",
+  "result": {
+    "status": "intervention_required",
+    "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+    "outputs": {},
+    "code": "policy_blocked",
+    "step_id": "step_2",
+    "expected": null,
+    "observed": "risky action requires human intervention",
+    "intervention_id": "8a4df257-d844-46cb-9132-5d386c2e77f9"
+  }
+}

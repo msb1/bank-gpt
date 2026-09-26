@@ -1,0 +1,74 @@
+{
+  "base_capability_id": "0fdf8e13-e573-4efc-984f-9745542b0bfb",
+  "schema_version": "2.0",
+  "vendor_product": "local-bank-demo",
+  "vendor_version": "1",
+  "decision_source": "existing approved artifact",
+  "remote_playwright": "ws://192.168.x.xx:8080/",
+  "binding_tenants": [
+    1,
+    2
+  ],
+  "logical_controls": [
+    "application_error",
+    "balance_cell",
+    "member_input",
+    "member_not_found",
+    "permission_denied",
+    "search_button",
+    "session_expired",
+    "success_marker",
+    "validation_error",
+    "verification_required"
+  ],
+  "runs": [
+    {
+      "tenant_id": 1,
+      "member_id": "[input]",
+      "run_id": "95facafb-aa8f-435f-b49c-3a6f3d450a45",
+      "status": "success",
+      "code": null,
+      "output_names": [
+        "balance"
+      ],
+      "checkpoint_verified": true
+    },
+    {
+      "tenant_id": 2,
+      "member_id": "[input]",
+      "run_id": "6a0a4093-14bf-42d5-bbd1-fd1d8c746290",
+      "status": "success",
+      "code": null,
+      "output_names": [
+        "balance"
+      ],
+      "checkpoint_verified": true
+    },
+    {
+      "tenant_id": 1,
+      "member_id": "[input]",
+      "run_id": "94edffee-a025-4929-bc33-222050af8052",
+      "status": "business_outcome",
+      "code": "member_not_found",
+      "output_names": [],
+      "checkpoint_verified": false
+    },
+    {
+      "tenant_id": 2,
+      "member_id": "[input]",
+      "run_id": "faa7aa55-7f50-40dd-86b4-60f6c6011df6",
+      "status": "business_outcome",
+      "code": "member_not_found",
+      "output_names": [],
+      "checkpoint_verified": false
+    }
+  ],
+  "tenant_2_drift": {
+    "status": "intervention_required",
+    "code": "target_unavailable",
+    "affected_control": "member_input",
+    "binding_persisted": false,
+    "tenant_1_run_succeeded": true
+  },
+  "assertion": "passed"
+}

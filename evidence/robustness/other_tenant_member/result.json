@@ -1,0 +1,13 @@
+{
+  "run_id": "d930cb3c-b547-4a01-882c-01a4d0316ccb",
+  "result": {
+    "status": "business_outcome",
+    "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+    "outputs": {},
+    "code": "member_not_found",
+    "step_id": "step_3",
+    "expected": null,
+    "observed": null,
+    "intervention_id": null
+  }
+}

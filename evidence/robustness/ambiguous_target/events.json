@@ -1,0 +1,152 @@
+[
+  {
+    "at": "2026-09-26T02:55:24.828637Z",
+    "kind": "replay_started",
+    "detail": {
+      "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+      "input_names": [
+        "member_id"
+      ]
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:24.828653Z",
+    "kind": "scenario_attached",
+    "detail": {
+      "fault": "ambiguous_target",
+      "step_id": "step_1",
+      "occurrences": 1,
+      "delay_seconds": 0
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:24.926215Z",
+    "kind": "step_completed",
+    "detail": {
+      "step_id": "step_1",
+      "action": "type",
+      "locator": {
+        "strategy": "label",
+        "value": "Member ID",
+        "tag": null
+      },
+      "output_name": null
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:30.012311Z",
+    "kind": "failure_observation",
+    "detail": {
+      "code": "target_unavailable",
+      "step_id": "step_2",
+      "attempted_target": {
+        "description": "Search",
+        "candidates": [
+          {
+            "strategy": "text",
+            "value": "Search",
+            "tag": "button"
+          }
+        ]
+      },
+      "observed": "target not found or ambiguous: Search",
+      "observation": {
+        "url": "http://192.168.z.zz:8000/demo",
+        "title": "Member Service Console",
+        "ui_version": "north-v1",
+        "controls": [
+          {
+            "index": 0,
+            "tag": "h1",
+            "text": "Member Service Console",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 1,
+            "tag": "input",
+            "text": "",
+            "label": "Member ID",
+            "destination": "http://192.168.z.zz:8000/demo",
+            "row_label": null,
+            "id": null,
+            "name": "member_id",
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 2,
+            "tag": "input",
+            "text": "",
+            "label": "Member ID",
+            "destination": "http://192.168.z.zz:8000/demo",
+            "row_label": null,
+            "id": null,
+            "name": "member_id",
+            "type": null,
+            "role": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:30.014846Z",
+    "kind": "intervention_requested",
+    "detail": {
+      "reason": "replay stopped: DriverError: target not found or ambiguous: Search",
+      "code": "target_unavailable",
+      "step_id": "step_2",
+      "owner": "human",
+      "browser_session_id": "c31f3bef-40d9-43ae-a431-5b582cf12f36",
+      "observation": {
+        "url": "http://192.168.z.zz:8000/demo",
+        "title": "Member Service Console",
+        "ui_version": "north-v1",
+        "controls": [
+          {
+            "index": 0,
+            "tag": "h1",
+            "text": "Member Service Console",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 1,
+            "tag": "input",
+            "text": "",
+            "label": "Member ID",
+            "destination": "http://192.168.z.zz:8000/demo",
+            "row_label": null,
+            "id": null,
+            "name": "member_id",
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 2,
+            "tag": "input",
+            "text": "",
+            "label": "Member ID",
+            "destination": "http://192.168.z.zz:8000/demo",
+            "row_label": null,
+            "id": null,
+            "name": "member_id",
+            "type": null,
+            "role": null
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "name": "slow_beyond_limit",
+  "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+  "scenario": {
+    "fault": "slow_load",
+    "step_id": "step_2",
+    "delay_seconds": 8
+  },
+  "expected_status": "intervention_required",
+  "expected_code": "wait_limit_exceeded",
+  "run_id": "c5dab995-1fb8-48cf-b1f7-3266666aeca5",
+  "assertion": "passed",
+  "browser": "remote-playwright"
+}

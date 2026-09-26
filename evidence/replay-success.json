@@ -1,0 +1,71 @@
+{
+  "run_id": "6a952bd9-d3ad-4ceb-a708-d864504b4e85",
+  "mode": "replay",
+  "owner": "automation",
+  "next_step": 3,
+  "intervention": null,
+  "events": [
+    {
+      "at": "2026-09-25T17:06:14.991145Z",
+      "kind": "replay_started",
+      "detail": {
+        "capability_id": "d358b5f0-8443-49a5-80f2-2d6ccc28f6c0",
+        "input_names": [
+          "member_id"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-25T17:06:15.061345Z",
+      "kind": "step_completed",
+      "detail": {
+        "step_id": "step_1",
+        "action": "type",
+        "locator": {
+          "strategy": "name",
+          "value": "member_id",
+          "tag": null
+        },
+        "output_name": null
+      }
+    },
+    {
+      "at": "2026-09-25T17:06:15.219588Z",
+      "kind": "step_completed",
+      "detail": {
+        "step_id": "step_2",
+        "action": "click",
+        "locator": {
+          "strategy": "text",
+          "value": "Search",
+          "tag": "button"
+        },
+        "output_name": null
+      }
+    },
+    {
+      "at": "2026-09-25T17:06:15.275488Z",
+      "kind": "step_completed",
+      "detail": {
+        "step_id": "step_3",
+        "action": "extract",
+        "locator": {
+          "strategy": "xpath",
+          "value": "//tr[td[1][normalize-space(.)='Savings balance']]/td[2]",
+          "tag": null
+        },
+        "output_name": "balance"
+      }
+    },
+    {
+      "at": "2026-09-25T17:06:15.283252Z",
+      "kind": "replay_success",
+      "detail": {
+        "capability_id": "d358b5f0-8443-49a5-80f2-2d6ccc28f6c0",
+        "output_names": [
+          "balance"
+        ]
+      }
+    }
+  ]
+}

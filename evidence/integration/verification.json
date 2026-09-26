@@ -1,0 +1,58 @@
+{
+  "environment": {
+    "remote_playwright": "ws://192.168.x.xx:8080/",
+    "model": "qwen2.5-7b-instruct-mlx",
+    "records": "fictional tenant fixture"
+  },
+  "checks": [
+    {
+      "command": "uv run --extra test pytest -q",
+      "result": "15 passed"
+    },
+    {
+      "command": "uv run python scripts/run_robustness.py --capability d847b7f4-6460-433f-b53c-4f4640c2d352",
+      "result": "13 asserted cases passed",
+      "evidence": "evidence/robustness/"
+    },
+    {
+      "command": "uv run python scripts/run_shared_capability.py --model-discover --output evidence/shared-capability/post-integration-model.json",
+      "result": "discovery and two-tenant replay passed",
+      "evidence": "evidence/shared-capability/post-integration-model.json"
+    },
+    {
+      "command": "uv run python scripts/run_handoff.py --auto-operator",
+      "result": "verification and completed-step handoffs passed",
+      "evidence": "evidence/handoff/"
+    },
+    {
+      "command": "uv run python scripts/run_stability_review.py",
+      "result": "three draft evaluations and approval per tenant passed",
+      "evidence": "evidence/stability/review.json"
+    },
+    {
+      "command": "uv run python scripts/run_fallback.py",
+      "result": "accepted correction, rejected missing target, and risky control stop passed",
+      "evidence": "evidence/fallback/live-qwen.json"
+    },
+    {
+      "command": "uv run --extra test python scripts/run_codegen_demo.py",
+      "result": "generated pytest contract check passed",
+      "evidence": "evidence/codegen/verification.json"
+    },
+    {
+      "command": "uv run python scripts/run_agent_mcp.py",
+      "result": "FastMCP stdio discovery, denial, invocation, and status passed",
+      "evidence": "evidence/agent-mcp/live-invocation.json"
+    }
+  ],
+  "evidence_scan": "No JWT-shaped strings, raw fictional member IDs, or balance amounts found in saved JSON evidence.",
+  "publication_review": {
+    "private_lan_addresses_in_publishable_files": 0,
+    "browser_placeholder": "192.168.x.xx",
+    "api_placeholder": "192.168.z.zz",
+    "canonical_bindings": "tenant 1 and tenant 2 load from published JSON, resolve the configured origin, and pass URL policy",
+    "json_files_parsed": 102,
+    "markdown_links": "all local file links and anchors resolve",
+    "environment": "real network addresses are in ignored .env only"
+  }
+}

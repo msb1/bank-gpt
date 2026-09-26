@@ -1,0 +1,13 @@
+{
+  "name": "disallowed_destination",
+  "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+  "scenario": {
+    "fault": "disallowed_destination",
+    "step_id": "step_2"
+  },
+  "expected_status": "intervention_required",
+  "expected_code": "policy_blocked",
+  "run_id": "a138ca93-7fb9-49e1-aef3-eb7878770231",
+  "assertion": "passed",
+  "browser": "remote-playwright"
+}

@@ -1,0 +1,296 @@
+[
+  {
+    "at": "2026-09-26T02:55:09.705800Z",
+    "kind": "replay_started",
+    "detail": {
+      "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+      "input_names": [
+        "member_id"
+      ]
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:09.705814Z",
+    "kind": "scenario_attached",
+    "detail": {
+      "fault": "slow_load",
+      "step_id": "step_2",
+      "occurrences": 1,
+      "delay_seconds": 8.0
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:09.801094Z",
+    "kind": "step_completed",
+    "detail": {
+      "step_id": "step_1",
+      "action": "type",
+      "locator": {
+        "strategy": "name",
+        "value": "member_id",
+        "tag": null
+      },
+      "output_name": null
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:18.212887Z",
+    "kind": "failure_observation",
+    "detail": {
+      "code": "wait_limit_exceeded",
+      "step_id": "step_2",
+      "attempted_target": {
+        "description": "Search",
+        "candidates": [
+          {
+            "strategy": "text",
+            "value": "Search",
+            "tag": "button"
+          }
+        ]
+      },
+      "observed": "Locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"//button[normalize-space(.)='Search']\")\n    - locator resolved to <button type=\"submit\">Search</button>\n  - attempting click action\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - performing click action\n    - click action done\n    - waiting for scheduled navigations to finish\n",
+      "observation": {
+        "url": "http://192.168.z.zz:8000/demo/result",
+        "title": "Member Service Console",
+        "ui_version": "north-v1",
+        "controls": [
+          {
+            "index": 0,
+            "tag": "h1",
+            "text": "Member Service Console",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 1,
+            "tag": "h2",
+            "text": "Member detail",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 2,
+            "tag": "td",
+            "text": "Member ID",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 3,
+            "tag": "td",
+            "text": "[value]",
+            "label": "",
+            "destination": null,
+            "row_label": "Member ID",
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 4,
+            "tag": "td",
+            "text": "Member name",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 5,
+            "tag": "td",
+            "text": "[value]",
+            "label": "",
+            "destination": null,
+            "row_label": "Member name",
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 6,
+            "tag": "td",
+            "text": "Savings balance",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 7,
+            "tag": "td",
+            "text": "[value]",
+            "label": "",
+            "destination": null,
+            "row_label": "Savings balance",
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 8,
+            "tag": "p",
+            "text": "Review only. No transaction controls are enabled.",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "at": "2026-09-26T02:55:18.216886Z",
+    "kind": "intervention_requested",
+    "detail": {
+      "reason": "replay stopped: TimeoutError: Locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"//button[normalize-space(.)='Search']\")\n    - locator resolved to <button type=\"submit\">Search</button>\n  - attempting click action\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - performing click action\n    - click action done\n    - waiting for scheduled navigations to finish\n",
+      "code": "wait_limit_exceeded",
+      "step_id": "step_2",
+      "owner": "human",
+      "browser_session_id": "f9d50a20-8a2b-45ed-93f7-63730ed642b2",
+      "observation": {
+        "url": "http://192.168.z.zz:8000/demo/result",
+        "title": "Member Service Console",
+        "ui_version": "north-v1",
+        "controls": [
+          {
+            "index": 0,
+            "tag": "h1",
+            "text": "Member Service Console",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 1,
+            "tag": "h2",
+            "text": "Member detail",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 2,
+            "tag": "td",
+            "text": "Member ID",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 3,
+            "tag": "td",
+            "text": "[value]",
+            "label": "",
+            "destination": null,
+            "row_label": "Member ID",
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 4,
+            "tag": "td",
+            "text": "Member name",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 5,
+            "tag": "td",
+            "text": "[value]",
+            "label": "",
+            "destination": null,
+            "row_label": "Member name",
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 6,
+            "tag": "td",
+            "text": "Savings balance",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 7,
+            "tag": "td",
+            "text": "[value]",
+            "label": "",
+            "destination": null,
+            "row_label": "Savings balance",
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 8,
+            "tag": "p",
+            "text": "Review only. No transaction controls are enabled.",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          }
+        ]
+      }
+    }
+  }
+]

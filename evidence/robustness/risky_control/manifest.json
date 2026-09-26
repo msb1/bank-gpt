@@ -1,0 +1,13 @@
+{
+  "name": "risky_control",
+  "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+  "scenario": {
+    "fault": "risky_control",
+    "step_id": "step_2"
+  },
+  "expected_status": "intervention_required",
+  "expected_code": "policy_blocked",
+  "run_id": "860e841a-44bc-4424-8ca5-ff564e5629de",
+  "assertion": "passed",
+  "browser": "remote-playwright"
+}

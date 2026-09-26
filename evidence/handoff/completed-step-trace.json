@@ -1,0 +1,745 @@
+{
+  "scenario_id": "40d55545-a8ca-47e1-b273-1ca86d4c249f",
+  "operator_url": "http://192.168.z.zz:8000/runs/40d55545-a8ca-47e1-b273-1ca86d4c249f/operator",
+  "before": {
+    "run_id": "40d55545-a8ca-47e1-b273-1ca86d4c249f",
+    "mode": "replay",
+    "owner": "human",
+    "binding_version": 4,
+    "result": {
+      "status": "intervention_required",
+      "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+      "outputs": {},
+      "code": "policy_blocked",
+      "step_id": "step_2",
+      "expected": null,
+      "observed": "risky action requires human intervention",
+      "intervention_id": "3c997337-b4d8-4cf2-8542-5bb5c9539af6"
+    },
+    "browser_session_id": "14fb45ef-4b92-4a60-b752-bd371a2e3976",
+    "next_step": 1,
+    "current_step": "step_2",
+    "intervention": {
+      "id": "3c997337-b4d8-4cf2-8542-5bb5c9539af6",
+      "reason": "risky action requires human intervention",
+      "browser_session_id": "14fb45ef-4b92-4a60-b752-bd371a2e3976",
+      "step_id": "step_2",
+      "owner": "human",
+      "state": "open",
+      "observation": {
+        "url": "http://192.168.z.zz:8000/demo",
+        "title": "Member Service Console",
+        "ui_version": "north-v1",
+        "controls": [
+          {
+            "index": 0,
+            "tag": "h1",
+            "text": "Member Service Console",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 1,
+            "tag": "td",
+            "text": "Member lookup",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 2,
+            "tag": "td",
+            "text": "[value]",
+            "label": "",
+            "destination": null,
+            "row_label": "Member lookup",
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 3,
+            "tag": "input",
+            "text": "",
+            "label": "Member ID",
+            "destination": "http://192.168.z.zz:8000/demo",
+            "row_label": null,
+            "id": "member",
+            "name": "member_id",
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 4,
+            "tag": "button",
+            "text": "Search",
+            "label": "",
+            "destination": "http://192.168.z.zz:8000/demo",
+            "row_label": null,
+            "id": null,
+            "name": "transfer",
+            "type": "submit",
+            "role": null
+          }
+        ]
+      },
+      "completed_step_action": false
+    },
+    "events": [
+      {
+        "at": "2026-09-26T02:55:36.212645Z",
+        "kind": "replay_started",
+        "detail": {
+          "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+          "input_names": [
+            "member_id"
+          ]
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:36.212660Z",
+        "kind": "scenario_attached",
+        "detail": {
+          "fault": "risky_control",
+          "step_id": "step_2",
+          "occurrences": 1,
+          "delay_seconds": 0
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:36.309834Z",
+        "kind": "step_completed",
+        "detail": {
+          "step_id": "step_1",
+          "action": "type",
+          "locator": {
+            "strategy": "name",
+            "value": "member_id",
+            "tag": null
+          },
+          "output_name": null
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:36.336991Z",
+        "kind": "policy_blocked",
+        "detail": {
+          "step_id": "step_2",
+          "reason": "risky action requires human intervention"
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:36.341578Z",
+        "kind": "intervention_requested",
+        "detail": {
+          "reason": "risky action requires human intervention",
+          "code": "policy_blocked",
+          "step_id": "step_2",
+          "owner": "human",
+          "browser_session_id": "14fb45ef-4b92-4a60-b752-bd371a2e3976",
+          "observation": {
+            "url": "http://192.168.z.zz:8000/demo",
+            "title": "Member Service Console",
+            "ui_version": "north-v1",
+            "controls": [
+              {
+                "index": 0,
+                "tag": "h1",
+                "text": "Member Service Console",
+                "label": "",
+                "destination": null,
+                "row_label": null,
+                "id": null,
+                "name": null,
+                "type": null,
+                "role": null
+              },
+              {
+                "index": 1,
+                "tag": "td",
+                "text": "Member lookup",
+                "label": "",
+                "destination": null,
+                "row_label": null,
+                "id": null,
+                "name": null,
+                "type": null,
+                "role": null
+              },
+              {
+                "index": 2,
+                "tag": "td",
+                "text": "[value]",
+                "label": "",
+                "destination": null,
+                "row_label": "Member lookup",
+                "id": null,
+                "name": null,
+                "type": null,
+                "role": null
+              },
+              {
+                "index": 3,
+                "tag": "input",
+                "text": "",
+                "label": "Member ID",
+                "destination": "http://192.168.z.zz:8000/demo",
+                "row_label": null,
+                "id": "member",
+                "name": "member_id",
+                "type": null,
+                "role": null
+              },
+              {
+                "index": 4,
+                "tag": "button",
+                "text": "Search",
+                "label": "",
+                "destination": "http://192.168.z.zz:8000/demo",
+                "row_label": null,
+                "id": null,
+                "name": "transfer",
+                "type": "submit",
+                "role": null
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "after_action": {
+    "run_id": "40d55545-a8ca-47e1-b273-1ca86d4c249f",
+    "mode": "replay",
+    "owner": "human",
+    "binding_version": 4,
+    "result": {
+      "status": "intervention_required",
+      "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+      "outputs": {},
+      "code": "policy_blocked",
+      "step_id": "step_2",
+      "expected": null,
+      "observed": "risky action requires human intervention",
+      "intervention_id": "3c997337-b4d8-4cf2-8542-5bb5c9539af6"
+    },
+    "browser_session_id": "14fb45ef-4b92-4a60-b752-bd371a2e3976",
+    "next_step": 1,
+    "current_step": "step_2",
+    "intervention": {
+      "id": "3c997337-b4d8-4cf2-8542-5bb5c9539af6",
+      "reason": "risky action requires human intervention",
+      "browser_session_id": "14fb45ef-4b92-4a60-b752-bd371a2e3976",
+      "step_id": "step_2",
+      "owner": "human",
+      "state": "open",
+      "observation": {
+        "url": "http://192.168.z.zz:8000/demo",
+        "title": "Member Service Console",
+        "ui_version": "north-v1",
+        "controls": [
+          {
+            "index": 0,
+            "tag": "h1",
+            "text": "Member Service Console",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 1,
+            "tag": "td",
+            "text": "Member lookup",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 2,
+            "tag": "td",
+            "text": "[value]",
+            "label": "",
+            "destination": null,
+            "row_label": "Member lookup",
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 3,
+            "tag": "input",
+            "text": "",
+            "label": "Member ID",
+            "destination": "http://192.168.z.zz:8000/demo",
+            "row_label": null,
+            "id": "member",
+            "name": "member_id",
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 4,
+            "tag": "button",
+            "text": "Search",
+            "label": "",
+            "destination": "http://192.168.z.zz:8000/demo",
+            "row_label": null,
+            "id": null,
+            "name": "transfer",
+            "type": "submit",
+            "role": null
+          }
+        ]
+      },
+      "completed_step_action": true
+    },
+    "events": [
+      {
+        "at": "2026-09-26T02:55:36.212645Z",
+        "kind": "replay_started",
+        "detail": {
+          "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+          "input_names": [
+            "member_id"
+          ]
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:36.212660Z",
+        "kind": "scenario_attached",
+        "detail": {
+          "fault": "risky_control",
+          "step_id": "step_2",
+          "occurrences": 1,
+          "delay_seconds": 0
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:36.309834Z",
+        "kind": "step_completed",
+        "detail": {
+          "step_id": "step_1",
+          "action": "type",
+          "locator": {
+            "strategy": "name",
+            "value": "member_id",
+            "tag": null
+          },
+          "output_name": null
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:36.336991Z",
+        "kind": "policy_blocked",
+        "detail": {
+          "step_id": "step_2",
+          "reason": "risky action requires human intervention"
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:36.341578Z",
+        "kind": "intervention_requested",
+        "detail": {
+          "reason": "risky action requires human intervention",
+          "code": "policy_blocked",
+          "step_id": "step_2",
+          "owner": "human",
+          "browser_session_id": "14fb45ef-4b92-4a60-b752-bd371a2e3976",
+          "observation": {
+            "url": "http://192.168.z.zz:8000/demo",
+            "title": "Member Service Console",
+            "ui_version": "north-v1",
+            "controls": [
+              {
+                "index": 0,
+                "tag": "h1",
+                "text": "Member Service Console",
+                "label": "",
+                "destination": null,
+                "row_label": null,
+                "id": null,
+                "name": null,
+                "type": null,
+                "role": null
+              },
+              {
+                "index": 1,
+                "tag": "td",
+                "text": "Member lookup",
+                "label": "",
+                "destination": null,
+                "row_label": null,
+                "id": null,
+                "name": null,
+                "type": null,
+                "role": null
+              },
+              {
+                "index": 2,
+                "tag": "td",
+                "text": "[value]",
+                "label": "",
+                "destination": null,
+                "row_label": "Member lookup",
+                "id": null,
+                "name": null,
+                "type": null,
+                "role": null
+              },
+              {
+                "index": 3,
+                "tag": "input",
+                "text": "",
+                "label": "Member ID",
+                "destination": "http://192.168.z.zz:8000/demo",
+                "row_label": null,
+                "id": "member",
+                "name": "member_id",
+                "type": null,
+                "role": null
+              },
+              {
+                "index": 4,
+                "tag": "button",
+                "text": "Search",
+                "label": "",
+                "destination": "http://192.168.z.zz:8000/demo",
+                "row_label": null,
+                "id": null,
+                "name": "transfer",
+                "type": "submit",
+                "role": null
+              }
+            ]
+          }
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:36.977209Z",
+        "kind": "human_action",
+        "detail": {
+          "operator_id": 5,
+          "action": "click",
+          "target": "Search",
+          "locator": {
+            "strategy": "name",
+            "value": "transfer",
+            "tag": null
+          },
+          "browser_session_id": "14fb45ef-4b92-4a60-b752-bd371a2e3976"
+        }
+      }
+    ]
+  },
+  "resumed": {
+    "run_id": "40d55545-a8ca-47e1-b273-1ca86d4c249f",
+    "result": {
+      "status": "success",
+      "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+      "outputs": {
+        "balance": "[amount]"
+      },
+      "code": null,
+      "step_id": null,
+      "expected": null,
+      "observed": null,
+      "intervention_id": null
+    }
+  },
+  "final": {
+    "run_id": "40d55545-a8ca-47e1-b273-1ca86d4c249f",
+    "mode": "replay",
+    "owner": "automation",
+    "binding_version": 4,
+    "result": {
+      "status": "success",
+      "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+      "outputs": {
+        "balance": "[amount]"
+      },
+      "code": null,
+      "step_id": null,
+      "expected": null,
+      "observed": null,
+      "intervention_id": null
+    },
+    "browser_session_id": "14fb45ef-4b92-4a60-b752-bd371a2e3976",
+    "next_step": 3,
+    "current_step": null,
+    "intervention": {
+      "id": "3c997337-b4d8-4cf2-8542-5bb5c9539af6",
+      "reason": "risky action requires human intervention",
+      "browser_session_id": "14fb45ef-4b92-4a60-b752-bd371a2e3976",
+      "step_id": "step_2",
+      "owner": "automation",
+      "state": "resolved",
+      "observation": {
+        "url": "http://192.168.z.zz:8000/demo",
+        "title": "Member Service Console",
+        "ui_version": "north-v1",
+        "controls": [
+          {
+            "index": 0,
+            "tag": "h1",
+            "text": "Member Service Console",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 1,
+            "tag": "td",
+            "text": "Member lookup",
+            "label": "",
+            "destination": null,
+            "row_label": null,
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 2,
+            "tag": "td",
+            "text": "[value]",
+            "label": "",
+            "destination": null,
+            "row_label": "Member lookup",
+            "id": null,
+            "name": null,
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 3,
+            "tag": "input",
+            "text": "",
+            "label": "Member ID",
+            "destination": "http://192.168.z.zz:8000/demo",
+            "row_label": null,
+            "id": "member",
+            "name": "member_id",
+            "type": null,
+            "role": null
+          },
+          {
+            "index": 4,
+            "tag": "button",
+            "text": "Search",
+            "label": "",
+            "destination": "http://192.168.z.zz:8000/demo",
+            "row_label": null,
+            "id": null,
+            "name": "transfer",
+            "type": "submit",
+            "role": null
+          }
+        ]
+      },
+      "completed_step_action": true
+    },
+    "events": [
+      {
+        "at": "2026-09-26T02:55:36.212645Z",
+        "kind": "replay_started",
+        "detail": {
+          "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+          "input_names": [
+            "member_id"
+          ]
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:36.212660Z",
+        "kind": "scenario_attached",
+        "detail": {
+          "fault": "risky_control",
+          "step_id": "step_2",
+          "occurrences": 1,
+          "delay_seconds": 0
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:36.309834Z",
+        "kind": "step_completed",
+        "detail": {
+          "step_id": "step_1",
+          "action": "type",
+          "locator": {
+            "strategy": "name",
+            "value": "member_id",
+            "tag": null
+          },
+          "output_name": null
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:36.336991Z",
+        "kind": "policy_blocked",
+        "detail": {
+          "step_id": "step_2",
+          "reason": "risky action requires human intervention"
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:36.341578Z",
+        "kind": "intervention_requested",
+        "detail": {
+          "reason": "risky action requires human intervention",
+          "code": "policy_blocked",
+          "step_id": "step_2",
+          "owner": "human",
+          "browser_session_id": "14fb45ef-4b92-4a60-b752-bd371a2e3976",
+          "observation": {
+            "url": "http://192.168.z.zz:8000/demo",
+            "title": "Member Service Console",
+            "ui_version": "north-v1",
+            "controls": [
+              {
+                "index": 0,
+                "tag": "h1",
+                "text": "Member Service Console",
+                "label": "",
+                "destination": null,
+                "row_label": null,
+                "id": null,
+                "name": null,
+                "type": null,
+                "role": null
+              },
+              {
+                "index": 1,
+                "tag": "td",
+                "text": "Member lookup",
+                "label": "",
+                "destination": null,
+                "row_label": null,
+                "id": null,
+                "name": null,
+                "type": null,
+                "role": null
+              },
+              {
+                "index": 2,
+                "tag": "td",
+                "text": "[value]",
+                "label": "",
+                "destination": null,
+                "row_label": "Member lookup",
+                "id": null,
+                "name": null,
+                "type": null,
+                "role": null
+              },
+              {
+                "index": 3,
+                "tag": "input",
+                "text": "",
+                "label": "Member ID",
+                "destination": "http://192.168.z.zz:8000/demo",
+                "row_label": null,
+                "id": "member",
+                "name": "member_id",
+                "type": null,
+                "role": null
+              },
+              {
+                "index": 4,
+                "tag": "button",
+                "text": "Search",
+                "label": "",
+                "destination": "http://192.168.z.zz:8000/demo",
+                "row_label": null,
+                "id": null,
+                "name": "transfer",
+                "type": "submit",
+                "role": null
+              }
+            ]
+          }
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:36.977209Z",
+        "kind": "human_action",
+        "detail": {
+          "operator_id": 5,
+          "action": "click",
+          "target": "Search",
+          "locator": {
+            "strategy": "name",
+            "value": "transfer",
+            "tag": null
+          },
+          "browser_session_id": "14fb45ef-4b92-4a60-b752-bd371a2e3976"
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:37.028407Z",
+        "kind": "human_handoff_completed",
+        "detail": {
+          "operator_id": 5,
+          "completed_step": true,
+          "next_step": 2,
+          "browser_session_id": "14fb45ef-4b92-4a60-b752-bd371a2e3976"
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:37.111685Z",
+        "kind": "step_completed",
+        "detail": {
+          "step_id": "step_3",
+          "action": "extract",
+          "locator": {
+            "strategy": "xpath",
+            "value": "//tr[td[1][normalize-space(.)='Savings balance']]/td[2]",
+            "tag": null
+          },
+          "output_name": "balance"
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:37.119272Z",
+        "kind": "checkpoint_verified",
+        "detail": {
+          "target": "Savings balance"
+        }
+      },
+      {
+        "at": "2026-09-26T02:55:37.119279Z",
+        "kind": "replay_success",
+        "detail": {
+          "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+          "output_names": [
+            "balance"
+          ]
+        }
+      }
+    ]
+  },
+  "assertion": "passed",
+  "browser": "remote-playwright"
+}

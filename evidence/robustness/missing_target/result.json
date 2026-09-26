@@ -1,0 +1,13 @@
+{
+  "run_id": "24ed8c79-a23d-4141-b0f6-848773be35b8",
+  "result": {
+    "status": "intervention_required",
+    "capability_id": "d847b7f4-6460-433f-b53c-4f4640c2d352",
+    "outputs": {},
+    "code": "target_unavailable",
+    "step_id": "step_1",
+    "expected": null,
+    "observed": "replay stopped: DriverError: target not found or ambiguous: Member ID",
+    "intervention_id": "f6fe17c4-ff11-4ee4-9e69-17d48f9fac2e"
+  }
+}

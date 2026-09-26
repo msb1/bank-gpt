@@ -1,0 +1,56 @@
+{
+  "code": "target_unavailable",
+  "step_id": "step_1",
+  "attempted_target": {
+    "description": "Member ID",
+    "candidates": [
+      {
+        "strategy": "name",
+        "value": "member_id",
+        "tag": null
+      },
+      {
+        "strategy": "label",
+        "value": "Member ID",
+        "tag": null
+      },
+      {
+        "strategy": "id",
+        "value": "member",
+        "tag": null
+      }
+    ]
+  },
+  "observed": "target not found or ambiguous: Member ID",
+  "observation": {
+    "url": "http://192.168.z.zz:8000/demo",
+    "title": "Member Service Console",
+    "ui_version": "north-v1",
+    "controls": [
+      {
+        "index": 0,
+        "tag": "h1",
+        "text": "Member Service Console",
+        "label": "",
+        "destination": null,
+        "row_label": null,
+        "id": null,
+        "name": null,
+        "type": null,
+        "role": null
+      },
+      {
+        "index": 1,
+        "tag": "p",
+        "text": "Lookup is temporarily unavailable",
+        "label": "",
+        "destination": null,
+        "row_label": null,
+        "id": null,
+        "name": null,
+        "type": null,
+        "role": null
+      }
+    ]
+  }
+}
